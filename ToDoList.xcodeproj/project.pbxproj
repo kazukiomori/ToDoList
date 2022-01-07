@@ -8,18 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		3B0486A827809C0A006A606C /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0486A727809C0A006A606C /* ToDoListApp.swift */; };
-		3B0486AA27809C0A006A606C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0486A927809C0A006A606C /* ContentView.swift */; };
+		3B0486AA27809C0A006A606C /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0486A927809C0A006A606C /* TodoList.swift */; };
 		3B0486AC27809C0E006A606C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0486AB27809C0E006A606C /* Assets.xcassets */; };
 		3B0486AF27809C0E006A606C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0486AE27809C0E006A606C /* Preview Assets.xcassets */; };
+		3B0486B727809D87006A606C /* TaskDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0486B627809D87006A606C /* TaskDetail.swift */; };
+		3B0486BA27809DB6006A606C /* TaskStatusTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0486B927809DB6006A606C /* TaskStatusTab.swift */; };
+		3B0486BC27809DD3006A606C /* StatusTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0486BB27809DD3006A606C /* StatusTabButton.swift */; };
+		3B0486BE27809DF6006A606C /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0486BD27809DF6006A606C /* TodoModel.swift */; };
+		3B0486C12785CE8D006A606C /* RegistTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0486C02785CE8D006A606C /* RegistTaskButton.swift */; };
+		3B0486C42785D135006A606C /* UpdateTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0486C32785D135006A606C /* UpdateTaskButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B0486A427809C0A006A606C /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B0486A727809C0A006A606C /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
-		3B0486A927809C0A006A606C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B0486A927809C0A006A606C /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 		3B0486AB27809C0E006A606C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B0486AE27809C0E006A606C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B0486B027809C0E006A606C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B0486B627809D87006A606C /* TaskDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetail.swift; sourceTree = "<group>"; };
+		3B0486B927809DB6006A606C /* TaskStatusTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatusTab.swift; sourceTree = "<group>"; };
+		3B0486BB27809DD3006A606C /* StatusTabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTabButton.swift; sourceTree = "<group>"; };
+		3B0486BD27809DF6006A606C /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		3B0486C02785CE8D006A606C /* RegistTaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistTaskButton.swift; sourceTree = "<group>"; };
+		3B0486C32785D135006A606C /* UpdateTaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTaskButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				3B0486A727809C0A006A606C /* ToDoListApp.swift */,
-				3B0486A927809C0A006A606C /* ContentView.swift */,
+				3B0486BF27809DFC006A606C /* Models */,
+				3B0486B827809D8C006A606C /* View */,
 				3B0486AB27809C0E006A606C /* Assets.xcassets */,
 				3B0486B027809C0E006A606C /* Info.plist */,
 				3B0486AD27809C0E006A606C /* Preview Content */,
@@ -67,6 +80,35 @@
 				3B0486AE27809C0E006A606C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3B0486B827809D8C006A606C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B0486A927809C0A006A606C /* TodoList.swift */,
+				3B0486B627809D87006A606C /* TaskDetail.swift */,
+				3B0486B927809DB6006A606C /* TaskStatusTab.swift */,
+				3B0486C22785D0F8006A606C /* Button */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B0486BF27809DFC006A606C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B0486BD27809DF6006A606C /* TodoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B0486C22785D0F8006A606C /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				3B0486BB27809DD3006A606C /* StatusTabButton.swift */,
+				3B0486C32785D135006A606C /* UpdateTaskButton.swift */,
+				3B0486C02785CE8D006A606C /* RegistTaskButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B0486AA27809C0A006A606C /* ContentView.swift in Sources */,
+				3B0486BA27809DB6006A606C /* TaskStatusTab.swift in Sources */,
+				3B0486C12785CE8D006A606C /* RegistTaskButton.swift in Sources */,
+				3B0486AA27809C0A006A606C /* TodoList.swift in Sources */,
+				3B0486C42785D135006A606C /* UpdateTaskButton.swift in Sources */,
+				3B0486B727809D87006A606C /* TaskDetail.swift in Sources */,
+				3B0486BE27809DF6006A606C /* TodoModel.swift in Sources */,
 				3B0486A827809C0A006A606C /* ToDoListApp.swift in Sources */,
+				3B0486BC27809DD3006A606C /* StatusTabButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
