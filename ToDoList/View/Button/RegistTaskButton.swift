@@ -14,9 +14,13 @@ struct RegistTaskButton: View {
     var body: some View {
         
         Button(action: {
-            todoList.append(task)
-            self.presentationMode.wrappedValue.dismiss()
-            UserDefaults.standard.setEncoded(todoList, forKey: "ToDoList")
+            if self.task.name == "" || self.task.description == ""{
+                
+            }else{
+                todoList.append(task)
+                self.presentationMode.wrappedValue.dismiss()
+                UserDefaults.standard.setEncoded(todoList, forKey: "ToDoList")
+            }
         }, label: {
             Text("登録")
                 .font(.title3)

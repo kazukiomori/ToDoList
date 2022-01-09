@@ -34,13 +34,9 @@ enum TaskStatus: String,CaseIterable,Codable{
 
 func createTaskList() -> [Task] {
     var taskList: [Task] = []
-    
-    //for num in 0...30{
-        //let task: Task = .init(name: "タスク\(num)", description: "タスク\(num)の説明です", status: num < 10 ? .new : .doing)
-        //taskList.append(task)
-    //}
     return taskList
 }
+
 
 extension UserDefaults {
   func setEncoded<T: Encodable>(_ value: T, forKey key: String) {

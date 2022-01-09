@@ -8,22 +8,21 @@
 import SwiftUI
 
 struct TodoList: View {
+    
+    @Binding var todoList: [Task]
     @EnvironmentObject var todoModel: TodoModel
     @State var selectedTab: TaskStatus
     @State private var isShowingSheet = false
     
-    var filteredTaskList:[Task] {
-        todoModel.taskList.filter{
-            $0.status == selectedTab
-        }
-    }
-    
     var body: some View {
         NavigationView{
             VStack {
+                
                 TaskStatusTab(selectedTab: $selectedTab)
                 List {
-                    ForEach(filteredTaskList) { task in
+                    ForEach(todoModel.taskList.filter{
+                        $0.status == selectedTab
+                    }) { task in
                         NavigationLink(
                             destination: TaskDetail(task: task)){
                             HStack {
@@ -37,19 +36,26 @@ struct TodoList: View {
                                     .padding(.leading, 6)
                             }
                         }
+                    }.onDelete{ (IndexSet) in
+                        todoModel.taskList.remove(atOffsets: IndexSet)
+                        UserDefaults.standard.setEncoded(todoList, forKey: "ToDoList")
+                    }
+                    .onMove{ (IndexSet, Destination) in
+                        todoModel.taskList.move(fromOffsets: IndexSet, toOffset: Destination)
+                        UserDefaults.standard.setEncoded(todoList, forKey: "ToDoList")
                     }
                 }
                 .cornerRadius(25)
                 .navigationTitle("ToDoList")
-                .navigationBarItems(trailing: Button(action: {
-                    isShowingSheet = true
-                }) {
-                    Text("+")
-                        .font(.title2)
-                        .foregroundColor(.black)
-                        .frame(width: 30, height: 30)
-                        .cornerRadius(15)
-                })
+                .navigationBarItems(leading:EditButton(),trailing: Button(action: {
+                                        isShowingSheet = true
+                                    }) {
+                                        Text("+")
+                                            .font(.title2)
+                                            .foregroundColor(.black)
+                                            .frame(width: 30, height: 30)
+                                            .cornerRadius(15)
+                                    })
             }
         }
         .onAppear(){
@@ -61,13 +67,12 @@ struct TodoList: View {
             let task: Task = .init(name: "",description: "",status: .new)
             TaskDetail(task: task)
         })
-        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        TodoList(selectedTab: TaskStatus.doing)
+        TodoList(todoList: .constant(TodoModel().taskList),selectedTab: TaskStatus.doing)
             .environmentObject(TodoModel())
     }
 }
