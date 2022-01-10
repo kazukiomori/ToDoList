@@ -38,16 +38,12 @@ struct TodoList: View {
                         }
                     }.onDelete{ (IndexSet) in
                         todoModel.taskList.remove(atOffsets: IndexSet)
-                        UserDefaults.standard.setEncoded(todoList, forKey: "ToDoList")
-                    }
-                    .onMove{ (IndexSet, Destination) in
-                        todoModel.taskList.move(fromOffsets: IndexSet, toOffset: Destination)
-                        UserDefaults.standard.setEncoded(todoList, forKey: "ToDoList")
+                        UserDefaults.standard.setEncoded(todoModel.taskList, forKey: "ToDoList")
                     }
                 }
                 .cornerRadius(25)
                 .navigationTitle("ToDoList")
-                .navigationBarItems(leading:EditButton(),trailing: Button(action: {
+                .navigationBarItems(trailing: Button(action: {
                                         isShowingSheet = true
                                     }) {
                                         Text("+")
