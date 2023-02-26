@@ -63,6 +63,8 @@ struct TodoList: View {
             let task: Task = .init(name: "",description: "",status: .new)
             TaskDetail(task: task)
         })
+        AdMobBannerView()
+            .frame(width: 320, height: 50)
     }
 }
 

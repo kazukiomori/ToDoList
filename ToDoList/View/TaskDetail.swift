@@ -57,6 +57,8 @@ struct TaskDetail: View {
                 .background(Color(.white))
             
             Spacer()
+            AdMobBannerView()
+                .frame(width: 320, height: 50)
         }
         .navigationBarTitleDisplayMode(.inline)
     }
