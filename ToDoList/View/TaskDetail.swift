@@ -49,8 +49,8 @@ struct TaskDetail: View {
                     .padding(.top)
                 Spacer()
             }
-            TextField("内容",text: $task.description)
-                .frame(width: UIScreen.main.bounds.size.width - 50, height: 40)
+            TextView(text: $task.description)
+                .frame(width: UIScreen.main.bounds.size.width - 50, height: 100)
                 .font(.system(size: 19, weight: .bold))
                 .padding(.horizontal)
                 .padding(.bottom, 5)

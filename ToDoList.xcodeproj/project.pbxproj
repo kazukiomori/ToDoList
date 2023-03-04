@@ -18,6 +18,7 @@
 		3B0486C12785CE8D006A606C /* RegistTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0486C02785CE8D006A606C /* RegistTaskButton.swift */; };
 		3B0486C42785D135006A606C /* UpdateTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0486C32785D135006A606C /* UpdateTaskButton.swift */; };
 		3B366ED329AB5E9000E140A7 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B366ED229AB5E9000E140A7 /* BannerView.swift */; };
+		3B58AA0629B345C700AFF83A /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58AA0529B345C700AFF83A /* TextView.swift */; };
 		B9D6D23D47D008D16910D655 /* Pods_ToDoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D23256C04BC4581CC7E714E /* Pods_ToDoList.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		3B0486C02785CE8D006A606C /* RegistTaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistTaskButton.swift; sourceTree = "<group>"; };
 		3B0486C32785D135006A606C /* UpdateTaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTaskButton.swift; sourceTree = "<group>"; };
 		3B366ED229AB5E9000E140A7 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		3B58AA0529B345C700AFF83A /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		8B5F857F9826532F41BF4A4D /* Pods-ToDoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoList.release.xcconfig"; path = "Target Support Files/Pods-ToDoList/Pods-ToDoList.release.xcconfig"; sourceTree = "<group>"; };
 		A6B6E9689277686EDA99D76D /* Pods-ToDoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoList.debug.xcconfig"; path = "Target Support Files/Pods-ToDoList/Pods-ToDoList.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +83,7 @@
 		3B0486A627809C0A006A606C /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				3B58AA0429B345A800AFF83A /* Util */,
 				3B0486A727809C0A006A606C /* ToDoListApp.swift */,
 				3B0486BF27809DFC006A606C /* Models */,
 				3B0486B827809D8C006A606C /* View */,
@@ -127,6 +130,14 @@
 				3B0486C02785CE8D006A606C /* RegistTaskButton.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		3B58AA0429B345A800AFF83A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3B58AA0529B345C700AFF83A /* TextView.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		B2D8D11A31C1633F35089D6A /* Pods */ = {
@@ -260,6 +271,7 @@
 				3B0486BE27809DF6006A606C /* TodoModel.swift in Sources */,
 				3B0486A827809C0A006A606C /* ToDoListApp.swift in Sources */,
 				3B0486BC27809DD3006A606C /* StatusTabButton.swift in Sources */,
+				3B58AA0629B345C700AFF83A /* TextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +402,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoList/Preview Content\"";
 				DEVELOPMENT_TEAM = 596D95CQ24;
 				ENABLE_PREVIEWS = YES;
@@ -421,7 +433,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoList/Preview Content\"";
 				DEVELOPMENT_TEAM = 596D95CQ24;
 				ENABLE_PREVIEWS = YES;
