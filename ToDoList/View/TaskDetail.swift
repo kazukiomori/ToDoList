@@ -24,6 +24,8 @@ struct TaskDetail: View {
                 
                 if taskIndex > todoModel.taskList.count {
                     RegistTaskButton(todoList: $todoModel.taskList, task: task)
+                        .padding(.bottom)
+                        .offset(x:0, y:32)
                 }else {
                     UpdateTaskButton(todoList: $todoModel.taskList,beforeValueTask: $todoModel.taskList[taskIndex], afterValueTask: task)
                 }
