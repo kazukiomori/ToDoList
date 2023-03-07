@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import AppTrackingTransparency
+import GoogleMobileAds
 
 struct TodoList: View {
     
