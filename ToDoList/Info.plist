@@ -222,9 +222,9 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.2</string>
+	<string>2.3</string>
 	<key>CFBundleVersion</key>
-	<string>5</string>
+	<string>6</string>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-9554476195266174~5514360601</string>
 	<key>LSRequiresIPhoneOS</key>
