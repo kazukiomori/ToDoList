@@ -14,11 +14,11 @@ struct StatusTabButton: View {
     var title: String{
         switch selfButtonStatus{
         case .new:
-            return "これから"
+            return NSLocalizedString("inFuture", comment: "")
         case .doing:
-            return "実行中"
+            return NSLocalizedString("inProcess", comment: "")
         case .done:
-            return "実行済み"
+            return NSLocalizedString("done", comment: "")
         }
     }
     var body: some View {

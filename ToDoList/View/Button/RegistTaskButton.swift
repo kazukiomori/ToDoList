@@ -22,7 +22,7 @@ struct RegistTaskButton: View {
                 UserDefaults.standard.setEncoded(todoList, forKey: "ToDoList")
             }
         }, label: {
-            Text("登録")
+            Text("update")
                 .font(.title3)
                 .foregroundColor(.black)
                 .fontWeight(.bold)

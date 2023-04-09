@@ -33,12 +33,12 @@ struct TaskDetail: View {
             TaskStatusTab(selectedTab: $task.status)
             
             HStack{
-                Text("タスク名")
+                Text("taskTitle")
                     .padding(.leading)
                     .padding(.top)
                 Spacer()
             }
-            TextField("タスク名",text: $task.name)
+            TextField("taskTitle",text: $task.name)
                 .frame(width: UIScreen.main.bounds.size.width - 50, height: 40)
                 .font(.system(size: 19, weight: .bold))
                 .padding(.horizontal)
@@ -46,7 +46,7 @@ struct TaskDetail: View {
                 .background(Color(.white))
             
             HStack{
-                Text("内容")
+                Text("taskContent")
                     .padding(.leading)
                     .padding(.top)
                 Spacer()

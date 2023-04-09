@@ -19,7 +19,7 @@ struct UpdateTaskButton: View {
             self.presentationMode.wrappedValue.dismiss()
             UserDefaults.standard.setEncoded(todoList, forKey: "ToDoList")
         }, label: {
-            Text("更新")
+            Text("update")
                 .font(.title3)
                 .foregroundColor(.black)
                 .fontWeight(.bold)

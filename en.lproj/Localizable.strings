@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  ToDoList
+
+  Created by Kazuki Omori on 2023/04/09.
+  
+*/
+
+// TaskDetail
+"taskTitle" = "Title";
+"taskContent" = "Content";
+
+// UpdateTaskButton
+"update" = "Update";
+
+// RegistTaskButton
+"Regist" = "Regist";
+
+// StatusTabButton
+"inFuture" = "in future";
+"inProcess" = "in process";
+"done" = "Done";

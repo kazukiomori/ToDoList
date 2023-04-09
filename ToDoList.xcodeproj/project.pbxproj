@@ -18,6 +18,7 @@
 		3B0486C12785CE8D006A606C /* RegistTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0486C02785CE8D006A606C /* RegistTaskButton.swift */; };
 		3B0486C42785D135006A606C /* UpdateTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0486C32785D135006A606C /* UpdateTaskButton.swift */; };
 		3B366ED329AB5E9000E140A7 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B366ED229AB5E9000E140A7 /* BannerView.swift */; };
+		3B3748DA29E2D1590011535B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B3748DC29E2D1590011535B /* Localizable.strings */; };
 		3B3A5BF529BCE67800ED1B5C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3A5BF429BCE67700ED1B5C /* AdSupport.framework */; };
 		3B3A5BF729BCE68900ED1B5C /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3A5BF629BCE68900ED1B5C /* AppTrackingTransparency.framework */; };
 		3B58AA0629B345C700AFF83A /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58AA0529B345C700AFF83A /* TextView.swift */; };
@@ -39,6 +40,8 @@
 		3B0486C02785CE8D006A606C /* RegistTaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistTaskButton.swift; sourceTree = "<group>"; };
 		3B0486C32785D135006A606C /* UpdateTaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTaskButton.swift; sourceTree = "<group>"; };
 		3B366ED229AB5E9000E140A7 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		3B3748DB29E2D1590011535B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3B3748DD29E2D1980011535B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3B3A5BF429BCE67700ED1B5C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		3B3A5BF629BCE68900ED1B5C /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		3B58AA0529B345C700AFF83A /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 		3B04869B27809C0A006A606C = {
 			isa = PBXGroup;
 			children = (
+				3B3748DC29E2D1590011535B /* Localizable.strings */,
 				3B0486A627809C0A006A606C /* ToDoList */,
 				3B0486A527809C0A006A606C /* Products */,
 				B2D8D11A31C1633F35089D6A /* Pods */,
@@ -200,6 +204,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 3B04869B27809C0A006A606C;
 			productRefGroup = 3B0486A527809C0A006A606C /* Products */;
@@ -217,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B0486AF27809C0E006A606C /* Preview Assets.xcassets in Resources */,
+				3B3748DA29E2D1590011535B /* Localizable.strings in Resources */,
 				3B0486AC27809C0E006A606C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +290,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3B3748DC29E2D1590011535B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B3748DB29E2D1590011535B /* ja */,
+				3B3748DD29E2D1980011535B /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3B0486B127809C0E006A606C /* Debug */ = {
