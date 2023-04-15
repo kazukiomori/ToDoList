@@ -13,7 +13,7 @@
 "update" = "更新";
 
 // RegistTaskButton
-"Regist" = "登録";
+"regist" = "登録";
 
 // StatusTabButton
 "inFuture" = "これから";
